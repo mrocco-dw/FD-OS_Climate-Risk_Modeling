@@ -38,8 +38,11 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: build risk modeling egg with python3
-      run: | 
-        python3 delta_risk_modeling_build_app.py
+      run: |
+        cd osf_risk_training
+        python create_model_egg.py
+        cd ..
+        python delta_risk_modeling_build_app.py
 
     - name: Test with pytest
       run: | 
