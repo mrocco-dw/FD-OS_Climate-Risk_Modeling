@@ -1,8 +1,8 @@
 import sys
-sys.path.append('risk-modeling-esg/output/esg_risk_training-0.0.1-py3.11.egg')
+sys.path.append('risk-modeling-osf/output/osf_risk_training-0.0.1-py3.11.egg')
 
-import esg_risk_training
+import osf_risk_training
 
-obj = esg_risk_training.EsgRiskTrainingClass()
+obj = osf_risk_training.OsfRiskTrainingClass()
 obj.set_x(29)
 print(obj.get_x())

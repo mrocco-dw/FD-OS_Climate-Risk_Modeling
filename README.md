@@ -1,10 +1,13 @@
 # FD-OS_Climate-Risk_Modeling
-The First Derivatives Risk Modelling tools with
+The First Derivatives Open Sustainable Finance OSF 
+
+Risk modeling tools including
 
   Solidatus Taxonomy 
   
    and
    
-   Python Machine Learning
+  Python Machine Learning
    
-   We are open source our tools to the community
+  
+  We are open source our Open SF tools to the community
