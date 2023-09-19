@@ -23,7 +23,8 @@ wheels/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
-*.egg
+# The egg is included with the build of OSF risk modeling - this is a trait of the solution
+# *.egg
 MANIFEST
 
 # PyInstaller
