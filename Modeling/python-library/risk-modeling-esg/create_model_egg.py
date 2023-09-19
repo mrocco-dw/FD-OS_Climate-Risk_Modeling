@@ -21,4 +21,4 @@ if __name__ == "__main__":
 
     shutil.rmtree('build')
     shutil.rmtree('dist')
-    shutil.rmtree('my_module.egg-info')
+    shutil.rmtree('esg_risk_training.egg-info')
