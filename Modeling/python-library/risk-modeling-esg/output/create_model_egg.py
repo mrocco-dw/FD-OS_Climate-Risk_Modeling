@@ -2,9 +2,7 @@ import os
 import shutil
 from setuptools import setup
 
-
 OUTPUT_DIR = 'output'
-
 
 if __name__ == "__main__":
     setup(
