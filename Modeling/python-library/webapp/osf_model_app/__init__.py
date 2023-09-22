@@ -6,13 +6,19 @@ class OsfModel:
     def __init__(none):
         self._x = None
 
-    def webapp():    
+    def webapp(assets_dir):
+        
         app = Flask(__name__)
 
         @app.route('/')
 
         def index():
-            return flask.send_from_directory("./webapp/osf_model_app/assets", path="fd-model-visual-search.html")
+            return "Open Sustainable Finance - Model Demo"
+        
+        @app.route('/model-visual-search')
+
+        def model_ri_sligo(path):
+            return flask.send_from_directory(assets_dir, path="fd-model-visual-search.html")
         
         return app
     
