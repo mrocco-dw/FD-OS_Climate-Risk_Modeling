@@ -39,22 +39,46 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Lint with flake8
+        
+    - name: Lint Model with flake8
       run: |
         pwd
-        cd osf_risk_training 
+        cd risk-modeling-osf 
         # stop the build if there are Python syntax errors or undefined names
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+    - name: Lint WebApp with flake8
+      run: |
+        pwd
+        cd webapp 
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
     - name: build risk modeling egg with python3
       run: |
-        cd osf_risk_training
+        cd risk-modeling-osf
         python create_model_egg.py
         cd ..
-        python delta_risk_modeling_build_app.py
+        python deploy_risk_modeling_app.py
 
-    - name: Test with pytest
+    - name: build webapp egg with python3
       run: |
-        cd osf_risk_training 
+        cd webapp
+        python create_webapp.py
+        cd ..
+        python launch_model_webapp.py
+
+    - name: Test Model build with pytest
+      run: |
+        cd risk-modeling-osf 
         pytest
+        cd ..
+   - name: Test WebApp build with pytest
+      run: |        
+        cd webapp
+        pytest
+        cd ..
