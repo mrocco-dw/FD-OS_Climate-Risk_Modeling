@@ -16,14 +16,17 @@ Risk modeling tools including
 
   We have built an python flask interactive webapp with github actions
 
-    ![Alt text](images/interactive-build-github.png?raw=true "Interactive build")
+![Alt text](images/interactive-build-github.png?raw=true "Interactive build")
 
-    Our WebApp allow analysis of risk scenarios in our analysed datapoints
+  Our WebApp allow analysis of risk scenarios in our analysed datapoints
 
-    at Macro level
+  
+  Macro level
 
-    ![Alt text](images/floodability-macro-level.png?raw=true "Floodability risk macro-level")
+![Alt text](images/floodability-macro-level.png?raw=true "Floodability risk macro-level")
 
-    at Low level
 
-    ![Alt text](images/floodability-low-level.png?raw=true "Property detail low-level")
+
+  Low level
+
+![Alt text](images/floodability-low-level.png?raw=true "Property detail low-level")
