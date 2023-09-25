@@ -12,5 +12,7 @@ assets_dir = "./webapp/osf_model_app/assets"
 
 app = osf_model_app.OsfModel.webapp(assets_dir, model_name)
 
+app.run(host='0.0.0.0', port=5000)
+
 webview.create_window('OSF Model WebApp', app)
 webview.start()
