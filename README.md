@@ -5,9 +5,25 @@ Risk modeling tools including
 
   Solidatus Taxonomy 
   
-   and
    
   Python Machine Learning
-   
   
   We are open source our Open SF tools to the community
+
+
+  Python Flask Modeling interactive Tool
+
+
+  We have built an python flask interactive webapp with github actions
+
+    ![Alt text](images/interactive-build-github.png?raw=true "Interactive build")
+
+    Our WebApp allow analysis of risk scenarios in our analysed datapoints
+
+    at Macro level
+
+    ![Alt text](images/floodability-macro-level.png?raw=true "Floodability risk macro-level")
+
+    at Low level
+
+    ![Alt text](images/floodability-low-level.png?raw=true "Property detail low-level")
