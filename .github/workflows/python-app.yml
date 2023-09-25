@@ -34,11 +34,13 @@ jobs:
           # You can test your matrix by printing the current Python version
     - name: Display Python version
       run: python -c "import sys; print(sys.version)"
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
     - name: Lint Model with flake8
       run: |
         pwd
@@ -47,6 +49,7 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
     - name: Lint WebApp with flake8
       run: |
         pwd
@@ -55,25 +58,31 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
     - name: build risk modeling egg with python3
       run: |
         cd risk-modeling-osf
         python create_model_egg.py
         cd ..
         python deploy_risk_modeling_app.py
+
     - name: build webapp egg with python3
       run: |
         cd webapp
         python create_webapp.py
         cd ..
         python launch_model_webapp.py
+
     - name: Test Model build with pytest
       run: |
         cd risk-modeling-osf 
         pytest
         cd ..
-   - name: Test WebApp build with pytest
+
+    - name: Test WebApp build with pytest
       run: |        
         cd webapp
         pytest
         cd ..
+        pwd
+
