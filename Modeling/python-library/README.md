@@ -25,7 +25,6 @@
     warnings.warn(
      zip_safe flag not set; analyzing archive contents...
 
-
     jcerqueira@A-LPTP-Pifd7NVa:/mnt/c/Users/jpafonso/github/fd-data-engineering/FD-OS_Climate-Risk_Modeling/Modeling/python-library/webapp$ cd ..
     
     jcerqueira@A-LPTP-Pifd7NVa:/mnt/c/Users/jpafonso/github/fd-data-engineering/FD-OS_Climate-Risk_Modeling/Modeling/python-library$ export MODEL_NAME="fd-model-visual-search.html"
