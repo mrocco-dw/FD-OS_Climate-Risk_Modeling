@@ -3,7 +3,7 @@ import webview
 from flask import Flask
 
 class OsfModel:
-    def __init__(none):
+    def __init__(self):
         self._x = None
 
     def webapp(assets_dir, model_name):
