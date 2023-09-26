@@ -72,7 +72,7 @@ jobs:
         cd webapp
         python create_webapp.py
         cd ..
-        export RUN_MODE="2"
+        export RUNMODE="2"
         python launch_model_webapp.py
 
     - name: Test Model build with pytest
