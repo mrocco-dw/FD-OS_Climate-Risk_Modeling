@@ -10,7 +10,7 @@ import osf_model_app
 # Default =1 Flask browser  or  !=1  WebView App
 run_mode =""
 run_mode = os.getenv("RUN_MODE")
-run_mode = run_mode if run_mode != "1" else "1"
+run_mode = run_mode if run_mode else "1"
 
 assets_dir = "osf_model_app/"
 
@@ -21,8 +21,8 @@ model_name = model_name if model_name != "" else "fd-model-visual-search.html"
 app = osf_model_app.OsfModel.webapp(assets_dir, model_name)
 
 if run_mode == "1" :
-     app.run(host='0.0.0.0', port=5000, debug=True)
-else :
      webview.create_window('------->>>>> OSF Model WebApp <<<<<-------', app)
      webview.start()
-
+else :
+     app.run(host='0.0.0.0', port=5000, debug=True)
+ 
