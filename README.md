@@ -18,24 +18,18 @@ Risk modeling tools including
 
 ![Alt text](images/interactive-build-github.png?raw=true "Interactive build")
 
-  Our WebApp allow analysis of risk scenarios in our analysed datapoints
 
+  Our WebApp allow analysis of risk scenarios in our analysed datapoints
   
   Macro level
-
 ![Alt text](images/floodability-macro-level.png?raw=true "Floodability risk macro-level")
 
 
-
   Low level
-
 ![Alt text](images/floodability-low-level.png?raw=true "Property detail low-level")
 
 
-
   Floodability HeapMap
-
-![Alt text](images/floodability-heapmap.png?raw=true "Floodability HeapMap")
-
+![Alt text](images/floodability-heatmap.png?raw=true "Floodability HeapMap")
 
    a.
