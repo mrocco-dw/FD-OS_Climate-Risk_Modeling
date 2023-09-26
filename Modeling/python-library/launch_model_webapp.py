@@ -12,7 +12,7 @@ import osf_model_app
 # run_mode
 # Default =="2" Flask webserver  or ==1  WebView App
 
-run_mode = os.getenv("RUNMODE", default="1")
+run_mode = os.getenv("RUNMODE", default="2")
 print(run_mode)
 
 assets_dir = "osf_model_app/"

@@ -30,3 +30,9 @@ Risk modeling tools including
   Low level
 
 ![Alt text](images/floodability-low-level.png?raw=true "Property detail low-level")
+
+
+
+  Floodability HeapMap
+
+![Alt text](images/floodability-heapmap.png?raw=true "Floodability HeapMap")
