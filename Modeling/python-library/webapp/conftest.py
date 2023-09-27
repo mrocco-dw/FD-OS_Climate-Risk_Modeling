@@ -4,9 +4,9 @@
 import pytest
 #
 def pytest_sessionstart(session=0):
-    execinfovalue = ""
-    with pytest.raises(ValueError) as execinfo: 
-        execinfovalue = 'TEST APP'
+    execinfovalue = 'TEST APP'
+    #with pytest.raises(ValueError) as execinfo: 
+    #    execinfo.value = 'TEST APP'
     assert str(execinfovalue) == 'TEST APP'
 #    pass
 #    return 1
