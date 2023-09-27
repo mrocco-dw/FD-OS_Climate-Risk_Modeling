@@ -4,7 +4,10 @@
 import pytest
 import osf_risk_training
 #
-def pytest_sessionstart(session=0, execinfovalue='TEST APP'):
+#
+def pytest_sessionstart():
+    pass
+def test_check_smoketest(session=0):
     with pytest.raises(ValueError) as execinfo: 
         obj = osf_risk_training.OsfRiskTrainingClass()
         dummy_val = 19
@@ -16,5 +19,6 @@ def pytest_sessionstart(session=0, execinfovalue='TEST APP'):
 # pytest setup stuff
 #pytest.main()
 #
-pytest_sessionstart(session=0, execinfovalue='TEST APP')
+pytest_sessionstart()
+test_check_smoketest(session=0)
 #
