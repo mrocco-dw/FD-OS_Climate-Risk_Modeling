@@ -11,7 +11,7 @@ def pytest_sessionstart(session=0, execinfovalue='TEST APP'):
         val_obj = obj.set_x(19)
         val_obj = obj.get_x()
         raise ValueError('Lets Pretend it raised an error!')
-    assert str(val_obj) == dummy_val
+    assert str(val_obj) == str(dummy_val)
 #
 # pytest setup stuff
 #pytest.main()

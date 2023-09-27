@@ -9,7 +9,7 @@ def pytest_sessionstart(session=0, execinfovalue='TEST APP'):
         execinfovalue = 'TEST APP'
         app = osf_model_app.OsfModel.webapp(assets_dir='', model_name='')
         raise ValueError('Lets Pretend it raised an error!')
-    assert str(execinfovalue) == 'TEST APP'
+    assert str(execinfovalue) == str('TEST APP')
 #
 # pytest setup stuff
 # pytest.main()
