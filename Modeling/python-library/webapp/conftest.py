@@ -11,7 +11,7 @@ def pytest_sessionstart(session=0, execinfovalue='TEST APP'):
 #    return 1
 #
 # pytest setup stuff
-pytest.main()
+# pytest.main()
 #
 pytest_sessionstart(session=0, execinfovalue='TEST APP')
 #
