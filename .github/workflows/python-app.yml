@@ -39,7 +39,7 @@ jobs:
       run: |
         sudo apt install libgirepository1.0-dev build-essential libgl1-mesa-dev  # piwebview requiremnt gi needed
         python -m pip install --upgrade pip
-        pip install flake8 pytest flask pyqt5 pyqtwebengine pywebview pywebview[qt] homekit 
+        pip install flake8 pytest flask pyqt5 pyqtwebengine pywebview pywebview[qt] homekit numpy torch pandas
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Lint Model with flake8

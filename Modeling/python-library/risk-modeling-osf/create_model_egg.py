@@ -6,8 +6,8 @@ OUTPUT_DIR = 'output'
 
 if __name__ == "__main__":
     setup(
-        name="osf_risk_training",
-        packages=['osf_risk_training'],
+        name="osf_risk_model",
+        packages=['osf_risk_model'],
         version="0.0.1",
         script_args=['--quiet', 'bdist_egg'], # to create egg-file only
     )
@@ -21,4 +21,4 @@ if __name__ == "__main__":
 
     shutil.rmtree('build')
     shutil.rmtree('dist')
-    shutil.rmtree('osf_risk_training.egg-info')
+    shutil.rmtree('osf_risk_model.egg-info')
