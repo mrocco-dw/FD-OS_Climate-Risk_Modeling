@@ -100,7 +100,7 @@ class OsfRiskTrainingClass:
         rounded = predictions.round()
         # make class predictions with the model as 0 or 1
         predictions = (model(X) > 0.5).int()
-        for i in range(5):
+        for i in range(25):
             print('%s => %d (expected %d)' % (X[i].tolist(), predictions[i], y[i]))
         # done
         print("experimentation done!")
