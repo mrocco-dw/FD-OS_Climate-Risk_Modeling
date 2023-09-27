@@ -3,7 +3,7 @@ import flask
 import webview
 from flask import Flask, render_template
 
-from osf_model_app.modelsources import HTML_TEMPLATE
+from osf_model_app.modelsources import HTML_TEMPLATE, HTML_HOME_TEMPLATE
 
 class OsfModel:
     def __init__(self):
@@ -23,7 +23,7 @@ class OsfModel:
         @app.route('/', methods=['GET', 'POST'])
 
         def homepage():
-            return """<h1> --------------------------- OSF Model WebApp --------------------------- </h1>"""
+            return(HTML_HOME_TEMPLATE.substitute())
         
         @app.route('/fd-model-visual-search', methods=['GET', 'POST'])
         def home(model_name="fd-model-visual-search.html"):
