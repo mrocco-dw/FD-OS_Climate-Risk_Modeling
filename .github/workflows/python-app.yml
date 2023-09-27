@@ -81,12 +81,12 @@ jobs:
     - name: Test Model build with pytest
       run: |
         cd risk-modeling-osf 
-        pytest
+        pytest -f conftest.py
         cd ..
 
     - name: Test WebApp build with pytest
       run: |        
         cd webapp
-        pytest
+        pytest -f conftest.py
         cd ..
         pwd
