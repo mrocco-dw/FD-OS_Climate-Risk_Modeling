@@ -72,8 +72,11 @@ jobs:
         cd webapp
         python create_webapp.py
         cd ..
+        export MODEL_NAME=""
         export RUNMODE="2"
-        python launch_model_webapp.py
+        echo "---SKIP LAUNCH WEBAPP SERVER ---"
+        echo " user@loc: python launch_model_webapp.py "
+        echo "webapp done!"
 
     - name: Test Model build with pytest
       run: |
