@@ -65,7 +65,7 @@ jobs:
         cd risk-modeling-osf
         python create_model_egg.py
         cd ..
-        python deploy_risk_modeling_app.py
+        python deploy_risk_model.py
 
     - name: build webapp egg with python3
       run: |
