@@ -2,13 +2,13 @@
 # conftest.py
 #
 import pytest
+import osf_model_app
 #
 def pytest_sessionstart(session=0, execinfovalue='TEST APP'):
-    #with pytest.raises(ValueError) as execinfo: 
-    #    execinfo.value = 'TEST APP'
+    with pytest.raises(ValueError) as execinfo:
+        execinfovalue = 'TEST APP'
+        raise ValueError('Lets Pretend it raised an error!')
     assert str(execinfovalue) == 'TEST APP'
-#    pass
-#    return 1
 #
 # pytest setup stuff
 # pytest.main()
