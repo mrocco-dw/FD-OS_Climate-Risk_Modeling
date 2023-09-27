@@ -1,9 +1,13 @@
 
 # FD-OS_Climate-Risk_Modeling
 
-Solution Demo with webApp launch script and open in browser http://localhost:5000/<model-template.html>
+Solution Demo with 2 steps
+
+  - WebApp launch script 
 
   user@x:/.../FD-OS_Climate-Risk_Modeling/$ ./launch-webapp.sh 
+
+ -  Open in browser http://localhost:5000/<model-template.html> 
 
 
 # Solution Build with Github Actions
