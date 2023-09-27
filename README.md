@@ -17,9 +17,9 @@ Risk modeling tools including
 
   - Solidatus Taxonomy 
   
-  - Python Machine Learning
-  
   - WebApp for model demonstrations
+
+  - Python Machine Learning
 
   We are open source our Open SF tools to the community
 
@@ -45,4 +45,14 @@ Risk modeling tools including
   Floodability HeapMap
 ![Alt text](images/floodability-heatmap.png?raw=true "Floodability HeapMap")
 
-   a.
+  
+  Python Machine Learning
+
+  - Model building script 
+
+  user@x:/.../FD-OS_Climate-Risk_Modeling/$ ./build-model.sh   
+  
+![Alt text](images/newral-training-1.png?raw=true "Model Training 1")
+
+![Alt text](images/newral-training-2.png?raw=true "Model Training 2")
+
