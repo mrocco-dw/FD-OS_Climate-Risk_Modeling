@@ -1,4 +1,12 @@
+
 # FD-OS_Climate-Risk_Modeling
+
+Solution Demo with webApp launch script and open in browser http://localhost:5000/<model-template.html>
+
+  user@x:/.../FD-OS_Climate-Risk_Modeling/$ ./launch-webapp.sh 
+
+
+# Solution Build with Github Actions
 The First Derivatives Open Sustainable Finance OSF 
 
 Risk modeling tools including

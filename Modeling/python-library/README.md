@@ -20,19 +20,19 @@
 
 # Build WebApp of OSG , WebServer as RUNMODE=2  WebApp as RUNMODE=1
 
-    jcerqueira@A-LPTP-Pifd7NVa:/mnt/c/Users/jpafonso/github/fd-data-engineering/FD-OS_Climate-Risk_Modeling/Modeling/python-library/webapp$ python3.exe create_webapp.py 
+    user@x:/.../FD-OS_Climate-Risk_Modeling/Modeling/python-library/webapp$ python3.exe create_webapp.py 
      C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\site-packages\setuptools\command\install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
     warnings.warn(
      zip_safe flag not set; analyzing archive contents...
 
-    jcerqueira@A-LPTP-Pifd7NVa:/mnt/c/Users/jpafonso/github/fd-data-engineering/FD-OS_Climate-Risk_Modeling/Modeling/python-library/webapp$ cd ..
+    user@x:/.../FD-OS_Climate-Risk_Modeling/Modeling/python-library/webapp$ cd ..
     
-    jcerqueira@A-LPTP-Pifd7NVa:/mnt/c/Users/jpafonso/github/fd-data-engineering/FD-OS_Climate-Risk_Modeling/Modeling/python-library$ export MODEL_NAME="fd-model-visual-search.html"
+    user@x:/.../FD-OS_Climate-Risk_Modeling/Modeling/python-library$ export MODEL_NAME="fd-model-visual-search.html"
 
-    jcerqueira@A-LPTP-Pifd7NVa:/mnt/c/Users/jpafonso/github/fd-data-engineering/FD-OS_Climate-Risk_Modeling/Modeling/python-library$ export RUNMODE="2"
+    user@x:/.../FD-OS_Climate-Risk_Modeling/Modeling/python-library$ export RUNMODE="2"
 
-    jcerqueira@A-LPTP-Pifd7NVa:/mnt/c/Users/jpafonso/github/fd-data-engineering/FD-OS_Climate-Risk_Modeling/Modeling/python-library$ export RUNMODE="1"
+    user@x:/.../FD-OS_Climate-Risk_Modeling/Modeling/python-library$ export RUNMODE="1"
 
-    jcerqueira@A-LPTP-Pifd7NVa:/mnt/c/Users/jpafonso/github/fd-data-engineering/FD-OS_Climate-Risk_Modeling/Modeling/python-library$ python3.exe launch_model_webapp.py 
+    user@x:/.../FD-OS_Climate-Risk_Modeling/Modeling/python-library$ python3.exe launch_model_webapp.py 
     
      
