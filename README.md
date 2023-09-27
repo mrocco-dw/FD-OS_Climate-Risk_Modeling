@@ -11,11 +11,12 @@ The First Derivatives Open Sustainable Finance OSF
 
 Risk modeling tools including
 
-  Solidatus Taxonomy 
+  - Solidatus Taxonomy 
   
-   
-  Python Machine Learning
+  - Python Machine Learning
   
+  - WebApp for model demonstrations
+
   We are open source our Open SF tools to the community
 
 
