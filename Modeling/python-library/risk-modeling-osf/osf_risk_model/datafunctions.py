@@ -1,5 +1,8 @@
 #
 # datafunctions.py
+#
+# Functions responsible for data preparation for ML/DL/NN feature creation
+#
 import pandas as pd
 import numpy as np
 
