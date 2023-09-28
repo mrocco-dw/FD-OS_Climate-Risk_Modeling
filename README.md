@@ -43,7 +43,7 @@ Risk modeling tools including
 
 
   Floodability HeapMap
-![Alt text](images/floodability-heatmap.png?raw=true "Floodability HeapMap")
+![Alt text](images/floodability-heatmap-2.png?raw=true "Floodability HeapMap")
 
   
   Python Machine Learning
