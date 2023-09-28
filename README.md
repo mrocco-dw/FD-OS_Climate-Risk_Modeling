@@ -52,7 +52,7 @@ Risk modeling tools including
 
   user@x:/.../FD-OS_Climate-Risk_Modeling/$ ./build-model.sh   
   
-![Alt text](images/newral-training-1.png?raw=true "Model Training 1")
+![Alt text](images/neural-training-1.png?raw=true "Model Training 1")
 
-![Alt text](images/newral-training-2.png?raw=true "Model Training 2")
+![Alt text](images/neural-training-2.png?raw=true "Model Training 2")
 
