@@ -18,7 +18,7 @@ class OsfModel:
 
         print(templates_dir_abs)
                 
-        app = Flask(__name__, template_folder=templates_dir_abs)
+        app = Flask(__name__, static_folder=templates_dir_abs, template_folder=templates_dir_abs)
 
         @app.route('/', methods=['GET', 'POST'])
 
