@@ -165,5 +165,5 @@ cython_debug/
 *.html
 
 # Hide the training datafiles from main view
-Modeling/python-library/risk-modeling-osf/osf_risk_model/data/sample-training-modeling-data.json
-Modeling/python-library/risk-modeling-osf/osf_risk_model/data/sample-training-modeling-data.csv
+**Modeling/python-library/risk-modeling-osf/osf_risk_model/data/sample-training-modeling-data.json
+**Modeling/python-library/risk-modeling-osf/osf_risk_model/data/sample-training-modeling-data.csv
