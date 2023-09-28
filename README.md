@@ -19,18 +19,6 @@ Risk modeling tools including
   
   - WebApp for model demonstrations
 
-  - Python Machine Learning
-
-  We are open source our Open SF tools to the community
-
-
-  Python Flask Modeling interactive Tool
-
-
-  We have built an python flask interactive webapp with github actions
-
-![Alt text](images/interactive-build-github.png?raw=true "Interactive build")
-
 
   Our WebApp allow analysis of risk scenarios in our analysed datapoints
   
@@ -45,8 +33,9 @@ Risk modeling tools including
   Floodability HeapMap
 ![Alt text](images/floodability-heatmap-2.png?raw=true "Floodability HeapMap")
 
-  
-  Python Machine Learning
+
+
+  - Python Machine Learning
 
   - Model building script 
 
@@ -55,4 +44,19 @@ Risk modeling tools including
 ![Alt text](images/neural-training-1.png?raw=true "Model Training 1")
 
 ![Alt text](images/neural-training-2.png?raw=true "Model Training 2")
+
+
+
+
+
+  We are open source our Open SF tools to the community
+
+
+  Python Flask Modeling interactive Tool
+
+
+  We have built an python flask interactive webapp with github actions
+
+![Alt text](images/interactive-build-github.png?raw=true "Interactive build")
+
 
