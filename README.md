@@ -35,7 +35,7 @@ Risk modeling tools including
   Our WebApp allow analysis of risk scenarios in our analysed datapoints
   
   Macro level
-![Alt text](images/floodability-macro-level.png?raw=true "Floodability risk macro-level")
+![Alt text](images/floodability-macro-level-2.png?raw=true "Floodability risk macro-level")
 
 
   Low level
