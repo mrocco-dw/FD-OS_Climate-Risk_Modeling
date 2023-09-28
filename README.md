@@ -9,10 +9,6 @@ Solution Demo with 2 steps
 
  -  Open in browser http://localhost:5000/<model-template.html> 
 
-
-# Solution Build with Github Actions
-The First Derivatives Open Sustainable Finance OSF 
-
 Risk modeling tools including
 
   - Solidatus Taxonomy 
@@ -37,7 +33,8 @@ Risk modeling tools including
 
   - Python Machine Learning
 
-  - Model building script 
+  Model build via script using Pytorch machine learning NNs 
+
 
   user@x:/.../FD-OS_Climate-Risk_Modeling/$ ./build-model.sh   
   
@@ -46,7 +43,8 @@ Risk modeling tools including
 ![Alt text](images/neural-training-2.png?raw=true "Model Training 2")
 
 
-
+# Solution Build with Github Actions
+The First Derivatives Open Sustainable Finance OSF 
 
 
   We are open source our Open SF tools to the community
