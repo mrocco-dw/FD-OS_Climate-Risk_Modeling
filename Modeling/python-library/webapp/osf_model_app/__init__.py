@@ -33,7 +33,7 @@ class OsfModel:
         @app.route('/<model_solution>', methods=['GET', 'POST'])
         def model_page(model_solution):
             location_file =  model_solution
-            return render_template(template_name_or_list=model_solution)
+            return render_template(template_name_or_list=location_file)
 
         @app.route('/search/<some_place>', methods=['GET', 'POST'])
         def some_place_page(some_place):
