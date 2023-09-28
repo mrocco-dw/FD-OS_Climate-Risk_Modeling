@@ -18,7 +18,7 @@ Risk modeling tools including
   - WebApp for model demonstrations
 
 
-  Our WebApp allow analysis of risk scenarios in our analysed datapoints
+  - - Our WebApp allow analysis of risk scenarios in our datapoints
   
   Macro level
 ![Alt text](images/floodability-macro-level-2.png?raw=true "Floodability risk macro-level")
@@ -33,7 +33,7 @@ Risk modeling tools including
 
 
 
-  - Python Machine Learning
+  - - Python Machine Learning
 
   Model build via script using Pytorch machine learning NNs 
 
@@ -52,10 +52,10 @@ The First Derivatives Open Sustainable Finance OSF
   We are open source our Open SF tools to the community
 
 
-  Python Flask Modeling interactive Tool
+  - Python Flask Modeling interactive Tool
 
 
-  We have built an python flask interactive webapp with github actions
+  - - We have built an python flask interactive webapp with github actions
 
 ![Alt text](images/interactive-build-github.png?raw=true "Interactive build")
 
