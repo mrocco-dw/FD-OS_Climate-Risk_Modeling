@@ -44,6 +44,7 @@ Risk modeling tools including
 
 ![Alt text](images/neural-training-2.png?raw=true "Model Training 2")
 
+![Alt text](images/neural-training-3.png?raw=true "Model Training 3")
 
 # Solution Build with Github Actions
 The First Derivatives Open Sustainable Finance OSF 
