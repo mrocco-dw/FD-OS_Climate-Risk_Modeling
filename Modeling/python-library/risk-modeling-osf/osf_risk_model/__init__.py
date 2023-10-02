@@ -35,7 +35,7 @@ class OsfRiskTrainingClass:
         # train the model
         loss_fn   = nn.BCELoss()  # binary cross entropy
         optimizer = optim.Adam(model.parameters(), lr=0.001)
-        n_epochs = 1000
+        n_epochs = 200
         batch_size = 10
         #
         # Training model based on load assets
