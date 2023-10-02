@@ -39,6 +39,11 @@ def clean_json_to_dataset(source_json_file='osf_risk_model/data/sample-training-
         del df[df.columns[53]]
         del df[df.columns[53]]
         #
+        # Re-Order Variables
+        df1 = df[df.columns[0:40]]
+        df2 = df[df.columns[41:52]]
+        df=df.iloc[:,[41,42,43,44,45,46,47,48,49,50,51,52,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3,38,39,40]]
+        #
         print("DF after drops cols")
         print(df.describe())
         source_csv_file="osf_risk_model/data/sample-training-modeling-data.csv"

@@ -21,11 +21,12 @@ class OsfRiskTrainingClass:
     def model_nn_loanbook_asset(source_json_file='osf_risk_model/data/sample-training-modeling-data.json'):
         #
         dataset = clean_json_to_dataset(source_json_file)
-        X = dataset[:,0:8]
-        y = dataset[:,8]
+        # 53 columns
+        X = dataset[:,0:52]
+        y = dataset[:,50]  # var to predict # floodscore_ud 
         # create tensor out of Numpy arrays
-        X = torch.tensor(X, dtype=torch.float32)
-        y = torch.tensor(y, dtype=torch.float32).reshape(-1, 1)
+        X = torch.tensor(X, dtype=torch.float32) 
+        y = torch.tensor(y, dtype=torch.float32).reshape(-1, 1) # OVERFITING ALL DATAPOINTS # 25536
         #
         # Define Model Neural Networks
         model = FloodabilityDataClassifier()
@@ -34,11 +35,11 @@ class OsfRiskTrainingClass:
         # train the model
         loss_fn   = nn.BCELoss()  # binary cross entropy
         optimizer = optim.Adam(model.parameters(), lr=0.001)
-        n_epochs = 100
+        n_epochs = 1000
         batch_size = 10
         #
         # Training model based on load assets
-        n_epochs = 100
+        n_epochs = 1000
         batch_size = 10
         for epoch in range(n_epochs):
             for i in range(0, len(X), batch_size):
@@ -57,18 +58,24 @@ class OsfRiskTrainingClass:
         accuracy = (y_pred.round() == y).float().mean()
         print(f"Accuracy {accuracy}")
         #
-        # Predictions
-        # make probability predictions with the model
+        # Prediction
+        # make probability predictions with the mode
+        print("- Predictions")
+        print("-- make probability predictions with the model")
         predictions = model(X)
-        for i in range(5):
+        for i in range(25):
             print('%s => %d (expected %d)' % (X[i].tolist(), predictions[i], y[i]))
-        # round predictions
+        print("- Class predictions rounded ")
         rounded = predictions.round()
+        # round
         # make class predictions with the model as 0 or 1
+        print("-- round")
+        print("-- make class predictions with the model as 0 or 1")
+        #
         predictions = (model(X) > 0.5).int()
         for i in range(25):
             print('%s => %d (expected %d)' % (X[i].tolist(), predictions[i], y[i]))
         # done
-        print("experimentation done!")
+        print("OSF Risk Model, experimentation done!")
         #
         return 0
