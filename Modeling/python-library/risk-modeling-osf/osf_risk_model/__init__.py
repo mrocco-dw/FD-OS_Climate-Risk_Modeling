@@ -23,8 +23,9 @@ class OsfRiskTrainingClass:
         dataset = clean_json_to_dataset(source_json_file)
         # 53 columns
         X = dataset[:,0:52]
-        # y = dataset[:,50]  # var to predict y = floodscore_ud
-        y = dataset[:,52]  # var to predict y = unflood_value
+        y = dataset[:,50]  # var to predict y = floodscore_ud
+        # y = dataset[:,52]  # var to predict y = unflood_value
+        #
         # create tensor out of Numpy arrays
         X = torch.tensor(X, dtype=torch.float32) 
         y = torch.tensor(y, dtype=torch.float32).reshape(-1, 1) # OVERFITING ALL DATAPOINTS # 25536
