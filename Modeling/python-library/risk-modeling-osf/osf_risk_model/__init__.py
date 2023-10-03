@@ -18,7 +18,7 @@ class OsfRiskTrainingClass:
     def get_x(self):
         return self._x
         
-    def model_nn_loanbook_asset(source_json_file='osf_risk_model/data/sample-training-modeling-data.json'):
+    def model_nn_floodability_loanbook_assets(source_json_file='osf_risk_model/data/sample-training-modeling-data.json'):
         #
         dataset = clean_json_to_dataset(source_json_file)
         # 53 columns
