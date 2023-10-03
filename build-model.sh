@@ -2,7 +2,7 @@
 #
 # python3 is required as main python
 #
-PATTERN_X="+(Linux*|wsl*)"
+PATTERN_X="+(Linux*|wsl*|MINGW64_NT-10.0-19045|MINGW64_NT-**.*-**)"
 if [[ "$(uname)" == $PATTERN_X ]]; then
     export PYTHON_BUILD_COMMAND=python.exe # FOR WSL / Linux WSL
 else
