@@ -58,6 +58,9 @@ The First Derivatives Open Sustainable Finance OSF
 
   - - We have built an python flask interactive webapp with github actions
 
-![Alt text](images/interactive-build-github.png?raw=true "Interactive build")
+![Alt text](images/interactive-build-github-1.png?raw=true "Interactive build 1")
 
+![Alt text](images/interactive-build-github-2.png?raw=true "Interactive build 2")
+
+![Alt text](images/interactive-build-github-3.png?raw=true "Interactive build 3")
 
