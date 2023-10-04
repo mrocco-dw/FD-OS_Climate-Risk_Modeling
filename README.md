@@ -55,7 +55,7 @@ The First Derivatives Open Sustainable Finance OSF
   - Python Flask Modeling interactive Tool
 
 
-  - - We have built an python flask interactive webapp with github actions
+  - - Here we built a python flask interactive webapp and a osf_risk_model on pytorch.nn using github actions
 
   - - $ vi .github/python-app.yml
 
