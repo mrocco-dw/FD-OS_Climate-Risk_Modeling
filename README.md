@@ -46,17 +46,19 @@ Risk modeling tools including
 
 ![Alt text](images/neural-training-3.png?raw=true "Model Training 3")
 
-# Solution Build with Github Actions
+# Solution - Github Actions
+
 The First Derivatives Open Sustainable Finance OSF 
-
-
+  
   We are open source our Open SF tools to the community
-
 
   - Python Flask Modeling interactive Tool
 
 
   - - We have built an python flask interactive webapp with github actions
+
+  - - $ vi .github/python-app.yml
+
 
 ![Alt text](images/interactive-build-github-1.png?raw=true "Interactive build 1")
 
