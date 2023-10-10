@@ -4,7 +4,7 @@
 #
 PATTERN_X="+(Linux*|wsl*|MINGW64_NT-10.0-19045|MINGW64_NT-**.*-**)"
 if [[ "$(uname)" == $PATTERN_X ]]; then
-    export PYTHON_BUILD_COMMAND=python.exe # FOR WSL / Linux WSL
+    export PYTHON_BUILD_COMMAND=python3.11.exe #=python.exe # FOR WSL / Linux WSL
 else
     export PYTHON_BUILD_COMMAND=python # For MacBook / IOs
 fi

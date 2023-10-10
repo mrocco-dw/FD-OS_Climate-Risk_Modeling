@@ -39,7 +39,7 @@ class OsfRiskTrainingClass:
         optimizer = optim.Adam(model.parameters(), lr=0.001)
         #
         # Training model based on load assets
-        n_epochs = 200
+        n_epochs = 101
         batch_size = 10
         for epoch in range(n_epochs):
             for i in range(0, len(X), batch_size):
