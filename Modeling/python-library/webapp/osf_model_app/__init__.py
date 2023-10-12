@@ -19,8 +19,7 @@ class OsfModel:
         print(templates_dir_abs)
                 
         app = Flask(__name__, static_folder=templates_dir_abs, template_folder=templates_dir_abs)
-        
-        
+            
         @app.route('/', methods=['GET'])
         
         def list_templates_in_homepage(local_assets_dir="webapp/osf_model_app/"):
