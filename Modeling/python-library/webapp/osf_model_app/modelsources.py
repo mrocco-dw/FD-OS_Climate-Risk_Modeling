@@ -26,10 +26,11 @@ HTML_HOME_TEMPLATE = Template("""
     <h1> - </h1>
     <h1> --- </h1>
     <h1> ----- </h1>
-    <h1> ----- OSF Model WebApp ----- </h1>
+    <h1> ----- OSF Model Solutions ----- </h1>
     <h1> ----- </h1>
     <h1> --- </h1>
     <h1> - </h1>
+    <h2> Geo-Location Model Maps </h2>
     <h5>
       <ul>
        {% for file in files %}
@@ -41,6 +42,7 @@ HTML_HOME_TEMPLATE = Template("""
        {% endfor %}
       </ul>
     </h5>
+    <h6>{{ utc_dt }}</h6>
 </body>
 
 </html>

@@ -2,7 +2,7 @@ import os
 import flask
 import webview
 from flask import Flask, render_template, abort, send_file
-
+import datetime
 from osf_model_app.modelsources import HTML_TEMPLATE, HTML_HOME_TEMPLATE
 
 class OsfModel:
@@ -41,8 +41,8 @@ class OsfModel:
             
             print(my_files)
 
-            return render_template('home.html',files=my_files)
-            #return(HTML_HOME_TEMPLATE.substitute(files=my_files))
+            return render_template('home.html',files=my_files, utc_dt=datetime.datetime.utcnow())
+            #return(HTML_HOME_TEMPLATE.substitute(files=my_files), utc_dt=datetime.datetime.utcnow()))
         
         @app.route('/<model_solution>', methods=['GET', 'POST'])
         def model_page(model_solution):
