@@ -7,29 +7,34 @@
             L_NO_TOUCH = false;
             L_DISABLE_3D = false;
         </script>
-    <style>html, body {width: 100%;height: 100%;margin: 0 auto;  background: white; text-align: center; padding: 0;}</style>
+    <style>html, body {width: 100%;height: 100%;margin: 0 auto;  background: white; text-align: center; padding: 0; background-image: url("https://wallpaperaccess.com/full/2910865.jpg");}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
 </head>
-<body>
-    <h1> - </h1>
-    <h1> --- </h1>
-    <h1> ----- </h1>
-    <h1> ----- OSF Model WebApp ----- </h1>
-    <h1> ----- </h1>
-    <h1> --- </h1>
-    <h1> - </h1>
-    <h2> Geo-Location Model Maps </h2>
-    <h5>
-      <ul>
-       {% for file in files %}
-         <li>
-           <a href={{ (request.path + '/' if request.path != '/' else '') + file }}>
-               {{ (request.path + '/' if request.path != '/' else '') + file }}
-           </a>
-         </li>
-       {% endfor %}
-      </ul>
-    </h5>
-    <h6>{{ utc_dt }}</h6>
+<body style="background-color: #333333;">
+  <div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <h1 style="text-align: center;"><span style="color: #ffffff;">OSF Model WebApp</span></h1>
+    <div>&nbsp;</div><div>&nbsp;</div>
+    <div>
+    <div style="text-align: left; color:#ffffff;"><h3><strong> &nbsp; &nbsp;&nbsp; &nbsp;Select a Geo-Location Model Map from the list below :</strong></h3></div>
+    <div>&nbsp;</div>
+    <div style='float:left'>
+    <table style="width: 500px; height: 169px; border-color: #ffffff; float: center; margin-left: 180px;" border="0" cellspacing="10">
+    <tbody>
+      {% for file in files %}
+      <tr>
+        <td style="width: 172px; text-align: left;">  
+          <a style="color: #ffffff; font-size: 20px;" href={{ (request.path + '/' if request.path != '/' else '') + file }}>
+            {{ (request.path + '/' if request.path != '/' else '') + file }}
+          </a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
 </body>
 </html>
