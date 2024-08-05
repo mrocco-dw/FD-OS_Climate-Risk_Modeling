@@ -1,0 +1,9 @@
+pytest
+ipython
+setuptools
+flask
+pandas
+pywebview
+torch
+torchvision
+--extra-index-url https://download.pytorch.org/whl/cpu
